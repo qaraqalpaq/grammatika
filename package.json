@@ -1,0 +1,32 @@
+{
+  "name": "grammar-project",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "pnpm lerna clean -y && pnpm lerna bootstrap && pnpm lerna exec 'rm -rf ./dist'",
+    "dev": "turbo run dev --parallel --no-cache",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "publish-alpha": "lerna version prerelease --no-private --force-publish --yes",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "lerna": "^5.1.1",
+    "prettier": "^2.5.1",
+    "turbo": "latest",
+    "typescript": "4.7.3",
+    "vitepress": "latest",
+    "vitest": "^0.14.2",
+
+    "tsconfig": "workspace:*"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "pnpm": "7"
+  }
+}

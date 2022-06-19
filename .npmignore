@@ -1,0 +1,9 @@
+# everything
+*
+
+# include necessary files
+!dist
+!package.json
+!README.md
+!*.d.ts
+!LICENSE

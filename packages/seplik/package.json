@@ -1,0 +1,15 @@
+{
+  "name": "@grammatika/seplik",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint *.ts*",
+    "test": "vitest --run --reporter verbose"
+  },
+  "devDependencies": {
+    "tsconfig": "0.0.0",
+    "typescript": "4.7.3"
+  },
+  "gitHead": "eed8f575e94d99056cd6a76f1a4857fbac27ab13"
+}
