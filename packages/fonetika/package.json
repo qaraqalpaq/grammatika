@@ -1,7 +1,7 @@
 {
   "name": "@grammatika/fonetika",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "lint": "eslint *.ts*",
