@@ -11,5 +11,7 @@
     "tsconfig": "0.0.0",
     "typescript": "4.7.3"
   },
-  "gitHead": "eed8f575e94d99056cd6a76f1a4857fbac27ab13"
+  "publishConfig": {
+    "access": "public"
+  }
 }
