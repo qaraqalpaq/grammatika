@@ -2,8 +2,9 @@ name: Publish Release
 
 on:
   push:
+    branches: [alpha]
     tags:
-      - 'v*-alpha*'
+      - 'v*'
 
 jobs:
   build:
