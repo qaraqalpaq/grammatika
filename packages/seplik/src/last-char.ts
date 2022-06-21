@@ -3,7 +3,7 @@
  * @param soz Kiriwsi sóz
  * @returns {string} Aqırǵı hárip
  */
-export default (soz: string): string => {
+export const lastChar = (soz: string): string => {
   const last2Chars = soz.slice(-2).toLowerCase();
   const lastIndex = soz.length - 1;
 

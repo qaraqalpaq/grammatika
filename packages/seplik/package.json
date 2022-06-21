@@ -1,6 +1,6 @@
 {
   "name": "@grammatika/seplik",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.10",
   "main": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
