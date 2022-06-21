@@ -4,6 +4,7 @@
   "private": true,
   "workspaces": ["packages/*"],
   "scripts": {
+    "prepare": "git update-index --skip-worktree -- .npmrc",
     "build": "turbo run build",
     "clean": "pnpm lerna clean -y && pnpm lerna bootstrap && pnpm lerna exec 'rm -rf ./dist'",
     "dev": "turbo run dev --parallel --no-cache",
