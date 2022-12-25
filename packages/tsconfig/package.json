@@ -1,7 +1,7 @@
 {
   "name": "tsconfig",
-  "version": "0.0.0",
-  "private": true,
-  "main": "index.js",
-  "files": ["base.json", "base.module.json"]
+  "files": [
+    "base.json",
+    "base.module.json"
+  ]
 }

@@ -82,7 +82,11 @@ export const aqirgiBuwinUnlime = (soz: string): boolean => {
   if (aqirgiBuwin.length === 3) aqirgiBuwin = aqirgiBuwin.substring(1);
 
   dawissizlar.unli.forEach(ses => {
-    unli = unli || aqirgiBuwin!.includes(ses);
+    if (aqirgiBuwin) {
+      unli = unli || aqirgiBuwin.includes(ses);
+    } else {
+      unli = false;
+    }
   });
 
   return unli;

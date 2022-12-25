@@ -9,6 +9,12 @@
       "inputs": ["**/*.spec.ts"],
       "outputs": []
     },
+    "clean": {
+      "cache": false
+    },
+    "//#clean": {
+      "cache": false
+    },
     "lint": {
       "outputs": []
     },

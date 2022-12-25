@@ -5,5 +5,12 @@
     "outDir": "./dist/esm",
     "declaration": false
   },
-  "exclude": ["node_modules/**", "*/**.spec.ts"]
+  "exclude": [
+    "node_modules/**",
+    "*/**.spec.ts"
+  ],
+  "include": [
+    "src/**/*",
+    ".eslint.cjs"
+  ]
 }

@@ -6,17 +6,17 @@
  * buwingaBol('qaraqalpaq');
  * // ['qa', 'ra', 'qal', 'paq'] dep qaytaradı.
  */
-export const buwingaBol = (soz: string): string | Array<string> => {
+export const buwingaBol = (soz: string): string | string[] | null => {
   if (soz === '') throw new Error('Sóz kiritilmedi.');
   if (soz.match(/\s/gi))
     throw new Error(
-      'Sózde heshqanday bos orınlar ya taza qatar bolmawı kerek.'
+      'Sózde heshqanday bos orınlar ya taza qatar bolmawı kerek.',
     );
 
   const regExp =
     /[^aáiıeoóuú]*[aáiıeoóuú]+(?:[^aáiıeoóuú]*$|[^aáiıeoóuú](?=[^aáiıeoóuú]))?/gi;
 
-  return soz.match(regExp)!;
+  return soz.match(regExp);
 };
 
 /**

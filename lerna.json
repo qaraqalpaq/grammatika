@@ -1,12 +1,9 @@
 {
   "npmClient": "pnpm",
   "useWorkspaces": true,
-  "packages": [
-    "packages/*"
-  ],
   "command": {
     "version": {
-      "exact": true
+      "exact": false
     },
     "publish": {
       "npmClient": "npm",
